@@ -1,0 +1,489 @@
+Warning: Design 'top' has '5' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top
+Version: T-2022.03
+Date   : Wed Jan 10 17:53:09 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: AXI/i_r/sel_reg_0_
+              (rising edge-triggered flip-flop clocked by axi_clk)
+  Endpoint: AXI/i_slave/arid_reg_5_
+            (rising edge-triggered flip-flop clocked by axi_clk)
+  Path Group: axi_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                enG2000K              fsa0m_a_generic_core_ss1p62v125c
+  R_ch               enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  AXI_I_axi2m0_i_inf_Master_AXI2Min_I_axi2m0_o_inf_Master_AXI2Mout_I_axi2m1_i_inf_Master_AXI2Min_I_axi2m1_o_inf_Master_AXI2Mout_I_axi2m2_i_inf_Master_AXI2Min_I_axi2m2_o_inf_Master_AXI2Mout_I_axi2s0_i_inf_Slave_AXI2Sin_I_axi2s0_o_inf_Slave_AXI2Sout_I_axi2s1_i_inf_Slave_AXI2Sin_I_axi2s1_o_inf_Slave_AXI2Sout_I_axi2s2_i_inf_Slave_AXI2Sin_I_axi2s2_o_inf_Slave_AXI2Sout_I_axi2s3_i_inf_Slave_AXI2Sin_I_axi2s3_o_inf_Slave_AXI2Sout_I_axi2s4_i_inf_Slave_AXI2Sin_I_axi2s4_o_inf_Slave_AXI2Sout_I_axi2s5_i_inf_Slave_AXI2Sin_I_axi2s5_o_inf_Slave_AXI2Sout_I_axi2s6_i_inf_Slave_AXI2Sin_I_axi2s6_o_inf_Slave_AXI2Sout_
+                     enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  DefaultSlave       enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  W_ch               enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  DMA_master_I_m2axi_i_inf_Master_M2AXIin_I_m2axi_o_inf_Master_M2AXIout_
+                     enG5K                 fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock axi_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  AXI/i_r/sel_reg_0_/CK (QDFFRBN)                         0.00       1.00 r
+  AXI/i_r/sel_reg_0_/Q (QDFFRBN)                          0.40       1.40 f
+  AXI/i_r/U49/O (INV1S)                                   0.23       1.63 r
+  AXI/i_r/U172/O (ND3)                                    0.24       1.87 f
+  AXI/i_r/U74/O (NR2)                                     0.32       2.20 r
+  AXI/i_r/U61/O (INV1S)                                   0.18       2.37 f
+  AXI/i_r/U337/O (NR3)                                    0.37       2.74 r
+  AXI/i_r/U336/O (AOI13HS)                                0.26       3.01 f
+  AXI/i_r/U48/O (INV1S)                                   0.20       3.21 r
+  AXI/i_r/U96/O (BUF1CK)                                  0.18       3.39 r
+  AXI/i_r/U84/O (BUF1CK)                                  0.58       3.97 r
+  AXI/i_r/U94/O (NR2)                                     0.23       4.20 f
+  AXI/i_r/U26/O (AN2)                                     0.35       4.55 f
+  AXI/i_r/U24/O (BUF1CK)                                  0.46       5.02 f
+  AXI/i_r/U215/O (AOI22S)                                 0.31       5.33 r
+  AXI/i_r/U206/O (AN2)                                    0.28       5.61 r
+  AXI/i_r/U285/O (ND3HT)                                  0.16       5.77 f
+  AXI/i_r/U11/O (INV4)                                    0.11       5.89 r
+  AXI/i_r/U15/O (NR2)                                     0.09       5.98 f
+  AXI/i_r/U14/O (OA112P)                                  0.37       6.35 f
+  AXI/i_r/U276/O (ND3HT)                                  0.20       6.55 r
+  AXI/i_r/U13/O (AN2T)                                    0.23       6.78 r
+  AXI/i_r/ready_sd_o (R_ch)                               0.00       6.78 r
+  AXI/i_slave/rready_i (DefaultSlave)                     0.00       6.78 r
+  AXI/i_slave/U42/O (ND2P)                                0.08       6.86 f
+  AXI/i_slave/U41/O (OA12P)                               0.31       7.17 f
+  AXI/i_slave/U43/O (OAI12HT)                             0.17       7.35 r
+  AXI/i_slave/wready_o (DefaultSlave)                     0.00       7.35 r
+  AXI/i_w/ready_sd_i (W_ch)                               0.00       7.35 r
+  AXI/i_w/U35/O (ND2F)                                    0.07       7.42 f
+  AXI/i_w/U52/O (OAI22HP)                                 0.12       7.54 r
+  AXI/i_w/U44/O (ND3HT)                                   0.12       7.66 f
+  AXI/i_w/U48/O (NR3HP)                                   0.18       7.84 r
+  AXI/i_w/U56/O (AO13P)                                   0.22       8.06 r
+  AXI/i_w/U51/O (BUF8)                                    0.24       8.30 r
+  AXI/i_w/ready_m2_o (W_ch)                               0.00       8.30 r
+  AXI/axi2m2_o_wready (AXI_I_axi2m0_i_inf_Master_AXI2Min_I_axi2m0_o_inf_Master_AXI2Mout_I_axi2m1_i_inf_Master_AXI2Min_I_axi2m1_o_inf_Master_AXI2Mout_I_axi2m2_i_inf_Master_AXI2Min_I_axi2m2_o_inf_Master_AXI2Mout_I_axi2s0_i_inf_Slave_AXI2Sin_I_axi2s0_o_inf_Slave_AXI2Sout_I_axi2s1_i_inf_Slave_AXI2Sin_I_axi2s1_o_inf_Slave_AXI2Sout_I_axi2s2_i_inf_Slave_AXI2Sin_I_axi2s2_o_inf_Slave_AXI2Sout_I_axi2s3_i_inf_Slave_AXI2Sin_I_axi2s3_o_inf_Slave_AXI2Sout_I_axi2s4_i_inf_Slave_AXI2Sin_I_axi2s4_o_inf_Slave_AXI2Sout_I_axi2s5_i_inf_Slave_AXI2Sin_I_axi2s5_o_inf_Slave_AXI2Sout_I_axi2s6_i_inf_Slave_AXI2Sin_I_axi2s6_o_inf_Slave_AXI2Sout_)
+                                                          0.00       8.30 r
+  i_dma/m2axi_i_wready (DMA_I_m2axi_i_inf_Master_M2AXIin_I_m2axi_o_inf_Master_M2AXIout_I_s2axi_i_inf_Slave_S2AXIin_I_s2axi_o_inf_Slave_S2AXIout_)
+                                                          0.00       8.30 r
+  i_dma/dma_m/m2axi_i_wready (DMA_master_I_m2axi_i_inf_Master_M2AXIin_I_m2axi_o_inf_Master_M2AXIout_)
+                                                          0.00       8.30 r
+  i_dma/dma_m/U28/O (INV12CK)                             0.06       8.36 f
+  i_dma/dma_m/U328/O (NR3HT)                              0.19       8.55 r
+  i_dma/dma_m/U27/O (AOI13HT)                             0.09       8.64 f
+  i_dma/dma_m/U330/O (NR2F)                               0.36       9.00 r
+  i_dma/dma_m/m2axi_o_wvalid (DMA_master_I_m2axi_i_inf_Master_M2AXIin_I_m2axi_o_inf_Master_M2AXIout_)
+                                                          0.00       9.00 r
+  i_dma/m2axi_o_wvalid (DMA_I_m2axi_i_inf_Master_M2AXIin_I_m2axi_o_inf_Master_M2AXIout_I_s2axi_i_inf_Slave_S2AXIin_I_s2axi_o_inf_Slave_S2AXIout_)
+                                                          0.00       9.00 r
+  AXI/axi2m2_i_wvalid (AXI_I_axi2m0_i_inf_Master_AXI2Min_I_axi2m0_o_inf_Master_AXI2Mout_I_axi2m1_i_inf_Master_AXI2Min_I_axi2m1_o_inf_Master_AXI2Mout_I_axi2m2_i_inf_Master_AXI2Min_I_axi2m2_o_inf_Master_AXI2Mout_I_axi2s0_i_inf_Slave_AXI2Sin_I_axi2s0_o_inf_Slave_AXI2Sout_I_axi2s1_i_inf_Slave_AXI2Sin_I_axi2s1_o_inf_Slave_AXI2Sout_I_axi2s2_i_inf_Slave_AXI2Sin_I_axi2s2_o_inf_Slave_AXI2Sout_I_axi2s3_i_inf_Slave_AXI2Sin_I_axi2s3_o_inf_Slave_AXI2Sout_I_axi2s4_i_inf_Slave_AXI2Sin_I_axi2s4_o_inf_Slave_AXI2Sout_I_axi2s5_i_inf_Slave_AXI2Sin_I_axi2s5_o_inf_Slave_AXI2Sout_I_axi2s6_i_inf_Slave_AXI2Sin_I_axi2s6_o_inf_Slave_AXI2Sout_)
+                                                          0.00       9.00 r
+  AXI/i_w/valid_m2_i (W_ch)                               0.00       9.00 r
+  AXI/i_w/U36/O (INV6)                                    0.06       9.06 f
+  AXI/i_w/U78/O (AN2T)                                    0.25       9.31 f
+  AXI/i_w/U7/O (BUF4)                                     0.29       9.60 f
+  AXI/i_w/U130/O (AO22P)                                  0.45      10.05 f
+  AXI/i_w/last_sd_o (W_ch)                                0.00      10.05 f
+  AXI/i_slave/wlast_i (DefaultSlave)                      0.00      10.05 f
+  AXI/i_slave/U122/O (MOAI1S)                             0.40      10.45 f
+  AXI/i_slave/U44/O (AN2)                                 0.35      10.81 f
+  AXI/i_slave/arready_o (DefaultSlave)                    0.00      10.81 f
+  AXI/i_ar/ready_sd_i (AR_ch)                             0.00      10.81 f
+  AXI/i_ar/U106/O (AN2S)                                  0.30      11.10 f
+  AXI/i_ar/valid_sd_o (AR_ch)                             0.00      11.10 f
+  AXI/i_slave/arvalid_i (DefaultSlave)                    0.00      11.10 f
+  AXI/i_slave/U57/O (ND2S)                                0.95      12.05 r
+  AXI/i_slave/U48/O (AO22S)                               0.43      12.49 r
+  AXI/i_slave/arid_reg_5_/D (QDFFRBN)                     0.00      12.49 r
+  data arrival time                                                 12.49
+
+  clock axi_clk (rise edge)                              12.50      12.50
+  clock network delay (ideal)                             1.00      13.50
+  clock uncertainty                                      -0.10      13.40
+  AXI/i_slave/arid_reg_5_/CK (QDFFRBN)                    0.00      13.40 r
+  library setup time                                     -0.17      13.23
+  data required time                                                13.23
+  --------------------------------------------------------------------------
+  data required time                                                13.23
+  data arrival time                                                -12.49
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.74
+
+
+  Startpoint: epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/data_reg_0_
+              (rising edge-triggered flip-flop clocked by cpu_clk)
+  Endpoint: epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/partial_sum_reg_90__30_
+            (rising edge-triggered flip-flop clocked by cpu_clk)
+  Path Group: cpu_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                enG2000K              fsa0m_a_generic_core_ss1p62v125c
+  FullyConnected_I_param_intf_sp_ram_intf__I_bias_intf_sp_ram_intf__I_weight_intf_sp_ram_intf__I_input_intf_sp_ram_intf__I_output_intf_sp_ram_intf__
+                     enG500K               fsa0m_a_generic_core_ss1p62v125c
+  H3889035353712812255_DW_mult_tc_346
+                     enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  H3889035353712812255_DW01_add_474
+                     enG5K                 fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock cpu_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/data_reg_0_/CK (QDFFRBT)
+                                                          0.00 #     1.00 r
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/data_reg_0_/Q (QDFFRBT)
+                                                          0.52       1.52 r
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/U542/O (BUF12CK)
+                                                          0.24       1.76 r
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/U1195/O (BUF12CK)
+                                                          0.36       2.12 r
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/a[0] (H3889035353712812255_DW_mult_tc_346)
+                                                          0.00       2.12 r
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U306/O (BUF2)
+                                                          0.40       2.52 r
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U551/O (XNR2HS)
+                                                          0.20       2.72 r
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U494/O (OAI22S)
+                                                          0.17       2.89 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U393/C (HA1)
+                                                          0.26       3.15 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U350/CO (FA1S)
+                                                          0.45       3.60 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U349/CO (FA1S)
+                                                          0.49       4.10 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U337/CO (FA1S)
+                                                          0.51       4.61 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U308/CO (FA1)
+                                                          0.38       4.99 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U311/CO (FA1)
+                                                          0.36       5.35 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U310/CO (FA1)
+                                                          0.36       5.70 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U326/CO (FA1)
+                                                          0.36       6.06 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U324/CO (FA1)
+                                                          0.36       6.42 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U323/CO (FA1)
+                                                          0.36       6.77 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U322/CO (FA1)
+                                                          0.36       7.13 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U321/CO (FA1)
+                                                          0.36       7.48 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U320/CO (FA1)
+                                                          0.36       7.84 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U309/CO (FA1)
+                                                          0.36       8.20 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U318/CO (FA1)
+                                                          0.36       8.55 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U319/CO (FA1)
+                                                          0.36       8.91 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U314/CO (FA1)
+                                                          0.36       9.26 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U327/CO (FA1)
+                                                          0.36       9.62 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U315/CO (FA1)
+                                                          0.36       9.98 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U325/CO (FA1)
+                                                          0.36      10.33 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U328/CO (FA1)
+                                                          0.36      10.69 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U330/CO (FA1)
+                                                          0.39      11.08 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/U312/O (INV4CK)
+                                                          0.14      11.22 r
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/mult_210_I91/product[23] (H3889035353712812255_DW_mult_tc_346)
+                                                          0.00      11.22 r
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/add_210_I91/B_23_ (H3889035353712812255_DW01_add_474)
+                                                          0.00      11.22 r
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/add_210_I91/U265/O (INV8)
+                                                          0.06      11.29 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/add_210_I91/U266/O (INV12CK)
+                                                          0.08      11.37 r
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/add_210_I91/U370/O (ND2)
+                                                          0.16      11.53 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/add_210_I91/U321/O (OAI12HS)
+                                                          0.27      11.80 r
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/add_210_I91/U245/O (AOI12HS)
+                                                          0.14      11.93 f
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/add_210_I91/U247/O (OAI12HS)
+                                                          0.34      12.27 r
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/add_210_I91/U272/O (AO12)
+                                                          0.28      12.55 r
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/add_210_I91/U267/O (XNR2H)
+                                                          0.21      12.77 r
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/add_210_I91/SUM[30] (H3889035353712812255_DW01_add_474)
+                                                          0.00      12.77 r
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/U14826/O (MUX2)
+                                                          0.45      13.21 r
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/partial_sum_reg_90__30_/D (QDFFRBN)
+                                                          0.00      13.21 r
+  data arrival time                                                 13.21
+
+  clock cpu_clk (rise edge)                              12.50      12.50
+  clock network delay (ideal)                             1.00      13.50
+  clock uncertainty                                      -0.10      13.40
+  epu_wrapper/i_ConvAcc_wrapper/i_ConvAcc/FullyConnected/partial_sum_reg_90__30_/CK (QDFFRBN)
+                                                          0.00      13.40 r
+  library setup time                                     -0.19      13.21
+  data required time                                                13.21
+  --------------------------------------------------------------------------
+  data required time                                                13.21
+  data arrival time                                                -13.21
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: dram_wrapper/dramvalid_reg
+              (rising edge-triggered flip-flop clocked by dram_clk)
+  Endpoint: dram_wrapper/i_fifo/mem_reg_3__23_
+            (rising edge-triggered flip-flop clocked by dram_clk)
+  Path Group: dram_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                enG2000K              fsa0m_a_generic_core_ss1p62v125c
+  R_ch               enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  AXI_I_axi2m0_i_inf_Master_AXI2Min_I_axi2m0_o_inf_Master_AXI2Mout_I_axi2m1_i_inf_Master_AXI2Min_I_axi2m1_o_inf_Master_AXI2Mout_I_axi2m2_i_inf_Master_AXI2Min_I_axi2m2_o_inf_Master_AXI2Mout_I_axi2s0_i_inf_Slave_AXI2Sin_I_axi2s0_o_inf_Slave_AXI2Sout_I_axi2s1_i_inf_Slave_AXI2Sin_I_axi2s1_o_inf_Slave_AXI2Sout_I_axi2s2_i_inf_Slave_AXI2Sin_I_axi2s2_o_inf_Slave_AXI2Sout_I_axi2s3_i_inf_Slave_AXI2Sin_I_axi2s3_o_inf_Slave_AXI2Sout_I_axi2s4_i_inf_Slave_AXI2Sin_I_axi2s4_o_inf_Slave_AXI2Sout_I_axi2s5_i_inf_Slave_AXI2Sin_I_axi2s5_o_inf_Slave_AXI2Sout_I_axi2s6_i_inf_Slave_AXI2Sin_I_axi2s6_o_inf_Slave_AXI2Sout_
+                     enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  DefaultSlave       enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  W_ch               enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  DMA_master_I_m2axi_i_inf_Master_M2AXIin_I_m2axi_o_inf_Master_M2AXIout_
+                     enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  DRAM_wrapper_I_s2axi_i_inf_Slave_S2AXIin_I_s2axi_o_inf_Slave_S2AXIout_
+                     enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  FIFO_FIFO_DEPTH2_1 enG5K                 fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock dram_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  dram_wrapper/dramvalid_reg/CK (QDFFRBN)                 0.00       1.00 r
+  dram_wrapper/dramvalid_reg/Q (QDFFRBN)                  1.24       2.24 r
+  dram_wrapper/s2axi_o_rvalid (DRAM_wrapper_I_s2axi_i_inf_Slave_S2AXIin_I_s2axi_o_inf_Slave_S2AXIout_)
+                                                          0.00       2.24 r
+  AXI/axi2s4_i_rvalid (AXI_I_axi2m0_i_inf_Master_AXI2Min_I_axi2m0_o_inf_Master_AXI2Mout_I_axi2m1_i_inf_Master_AXI2Min_I_axi2m1_o_inf_Master_AXI2Mout_I_axi2m2_i_inf_Master_AXI2Min_I_axi2m2_o_inf_Master_AXI2Mout_I_axi2s0_i_inf_Slave_AXI2Sin_I_axi2s0_o_inf_Slave_AXI2Sout_I_axi2s1_i_inf_Slave_AXI2Sin_I_axi2s1_o_inf_Slave_AXI2Sout_I_axi2s2_i_inf_Slave_AXI2Sin_I_axi2s2_o_inf_Slave_AXI2Sout_I_axi2s3_i_inf_Slave_AXI2Sin_I_axi2s3_o_inf_Slave_AXI2Sout_I_axi2s4_i_inf_Slave_AXI2Sin_I_axi2s4_o_inf_Slave_AXI2Sout_I_axi2s5_i_inf_Slave_AXI2Sin_I_axi2s5_o_inf_Slave_AXI2Sout_I_axi2s6_i_inf_Slave_AXI2Sin_I_axi2s6_o_inf_Slave_AXI2Sout_)
+                                                          0.00       2.24 r
+  AXI/i_r/valid_s4_i (R_ch)                               0.00       2.24 r
+  AXI/i_r/U52/O (INV1S)                                   0.25       2.49 f
+  AXI/i_r/U173/O (OA12)                                   0.34       2.84 f
+  AXI/i_r/U355/O (OR3B2)                                  0.20       3.04 r
+  AXI/i_r/U306/O (AN2B1)                                  0.14       3.18 f
+  AXI/i_r/U354/O (OR3B2)                                  0.21       3.39 r
+  AXI/i_r/U9/O (INV2)                                     0.06       3.45 f
+  AXI/i_r/U25/O (BUF1CK)                                  0.20       3.65 f
+  AXI/i_r/U17/O (BUF8CK)                                  0.18       3.83 f
+  AXI/i_r/U16/O (AOI22HP)                                 0.22       4.05 r
+  AXI/i_r/U285/O (ND3HT)                                  0.16       4.21 f
+  AXI/i_r/U11/O (INV4)                                    0.11       4.33 r
+  AXI/i_r/U15/O (NR2)                                     0.09       4.42 f
+  AXI/i_r/U14/O (OA112P)                                  0.37       4.79 f
+  AXI/i_r/U276/O (ND3HT)                                  0.20       4.99 r
+  AXI/i_r/U13/O (AN2T)                                    0.23       5.22 r
+  AXI/i_r/ready_sd_o (R_ch)                               0.00       5.22 r
+  AXI/i_slave/rready_i (DefaultSlave)                     0.00       5.22 r
+  AXI/i_slave/U42/O (ND2P)                                0.08       5.30 f
+  AXI/i_slave/U41/O (OA12P)                               0.31       5.61 f
+  AXI/i_slave/U43/O (OAI12HT)                             0.17       5.78 r
+  AXI/i_slave/wready_o (DefaultSlave)                     0.00       5.78 r
+  AXI/i_w/ready_sd_i (W_ch)                               0.00       5.78 r
+  AXI/i_w/U35/O (ND2F)                                    0.07       5.86 f
+  AXI/i_w/U52/O (OAI22HP)                                 0.12       5.98 r
+  AXI/i_w/U44/O (ND3HT)                                   0.12       6.10 f
+  AXI/i_w/U48/O (NR3HP)                                   0.18       6.28 r
+  AXI/i_w/U56/O (AO13P)                                   0.22       6.50 r
+  AXI/i_w/U51/O (BUF8)                                    0.24       6.74 r
+  AXI/i_w/ready_m2_o (W_ch)                               0.00       6.74 r
+  AXI/axi2m2_o_wready (AXI_I_axi2m0_i_inf_Master_AXI2Min_I_axi2m0_o_inf_Master_AXI2Mout_I_axi2m1_i_inf_Master_AXI2Min_I_axi2m1_o_inf_Master_AXI2Mout_I_axi2m2_i_inf_Master_AXI2Min_I_axi2m2_o_inf_Master_AXI2Mout_I_axi2s0_i_inf_Slave_AXI2Sin_I_axi2s0_o_inf_Slave_AXI2Sout_I_axi2s1_i_inf_Slave_AXI2Sin_I_axi2s1_o_inf_Slave_AXI2Sout_I_axi2s2_i_inf_Slave_AXI2Sin_I_axi2s2_o_inf_Slave_AXI2Sout_I_axi2s3_i_inf_Slave_AXI2Sin_I_axi2s3_o_inf_Slave_AXI2Sout_I_axi2s4_i_inf_Slave_AXI2Sin_I_axi2s4_o_inf_Slave_AXI2Sout_I_axi2s5_i_inf_Slave_AXI2Sin_I_axi2s5_o_inf_Slave_AXI2Sout_I_axi2s6_i_inf_Slave_AXI2Sin_I_axi2s6_o_inf_Slave_AXI2Sout_)
+                                                          0.00       6.74 r
+  i_dma/m2axi_i_wready (DMA_I_m2axi_i_inf_Master_M2AXIin_I_m2axi_o_inf_Master_M2AXIout_I_s2axi_i_inf_Slave_S2AXIin_I_s2axi_o_inf_Slave_S2AXIout_)
+                                                          0.00       6.74 r
+  i_dma/dma_m/m2axi_i_wready (DMA_master_I_m2axi_i_inf_Master_M2AXIin_I_m2axi_o_inf_Master_M2AXIout_)
+                                                          0.00       6.74 r
+  i_dma/dma_m/U28/O (INV12CK)                             0.06       6.80 f
+  i_dma/dma_m/U328/O (NR3HT)                              0.19       6.99 r
+  i_dma/dma_m/U27/O (AOI13HT)                             0.09       7.08 f
+  i_dma/dma_m/U330/O (NR2F)                               0.36       7.44 r
+  i_dma/dma_m/m2axi_o_wvalid (DMA_master_I_m2axi_i_inf_Master_M2AXIin_I_m2axi_o_inf_Master_M2AXIout_)
+                                                          0.00       7.44 r
+  i_dma/m2axi_o_wvalid (DMA_I_m2axi_i_inf_Master_M2AXIin_I_m2axi_o_inf_Master_M2AXIout_I_s2axi_i_inf_Slave_S2AXIin_I_s2axi_o_inf_Slave_S2AXIout_)
+                                                          0.00       7.44 r
+  AXI/axi2m2_i_wvalid (AXI_I_axi2m0_i_inf_Master_AXI2Min_I_axi2m0_o_inf_Master_AXI2Mout_I_axi2m1_i_inf_Master_AXI2Min_I_axi2m1_o_inf_Master_AXI2Mout_I_axi2m2_i_inf_Master_AXI2Min_I_axi2m2_o_inf_Master_AXI2Mout_I_axi2s0_i_inf_Slave_AXI2Sin_I_axi2s0_o_inf_Slave_AXI2Sout_I_axi2s1_i_inf_Slave_AXI2Sin_I_axi2s1_o_inf_Slave_AXI2Sout_I_axi2s2_i_inf_Slave_AXI2Sin_I_axi2s2_o_inf_Slave_AXI2Sout_I_axi2s3_i_inf_Slave_AXI2Sin_I_axi2s3_o_inf_Slave_AXI2Sout_I_axi2s4_i_inf_Slave_AXI2Sin_I_axi2s4_o_inf_Slave_AXI2Sout_I_axi2s5_i_inf_Slave_AXI2Sin_I_axi2s5_o_inf_Slave_AXI2Sout_I_axi2s6_i_inf_Slave_AXI2Sin_I_axi2s6_o_inf_Slave_AXI2Sout_)
+                                                          0.00       7.44 r
+  AXI/i_w/valid_m2_i (W_ch)                               0.00       7.44 r
+  AXI/i_w/U36/O (INV6)                                    0.06       7.50 f
+  AXI/i_w/U133/O (NR2T)                                   0.16       7.66 r
+  AXI/i_w/U57/O (BUF8)                                    0.25       7.91 r
+  AXI/i_w/U316/O (NR2F)                                   0.15       8.05 f
+  AXI/i_w/U326/O (NR2P)                                   0.98       9.04 r
+  AXI/i_w/valid_s4_o (W_ch)                               0.00       9.04 r
+  AXI/axi2s4_o_wvalid (AXI_I_axi2m0_i_inf_Master_AXI2Min_I_axi2m0_o_inf_Master_AXI2Mout_I_axi2m1_i_inf_Master_AXI2Min_I_axi2m1_o_inf_Master_AXI2Mout_I_axi2m2_i_inf_Master_AXI2Min_I_axi2m2_o_inf_Master_AXI2Mout_I_axi2s0_i_inf_Slave_AXI2Sin_I_axi2s0_o_inf_Slave_AXI2Sout_I_axi2s1_i_inf_Slave_AXI2Sin_I_axi2s1_o_inf_Slave_AXI2Sout_I_axi2s2_i_inf_Slave_AXI2Sin_I_axi2s2_o_inf_Slave_AXI2Sout_I_axi2s3_i_inf_Slave_AXI2Sin_I_axi2s3_o_inf_Slave_AXI2Sout_I_axi2s4_i_inf_Slave_AXI2Sin_I_axi2s4_o_inf_Slave_AXI2Sout_I_axi2s5_i_inf_Slave_AXI2Sin_I_axi2s5_o_inf_Slave_AXI2Sout_I_axi2s6_i_inf_Slave_AXI2Sin_I_axi2s6_o_inf_Slave_AXI2Sout_)
+                                                          0.00       9.04 r
+  dram_wrapper/s2axi_i_wvalid (DRAM_wrapper_I_s2axi_i_inf_Slave_S2AXIin_I_s2axi_o_inf_Slave_S2AXIout_)
+                                                          0.00       9.04 r
+  dram_wrapper/U221/O (AN3B2S)                            0.25       9.28 r
+  dram_wrapper/i_fifo/wen_i (FIFO_FIFO_DEPTH2_1)          0.00       9.28 r
+  dram_wrapper/i_fifo/U202/O (ND2)                        0.34       9.62 f
+  dram_wrapper/i_fifo/U44/O (NR2)                         0.69      10.31 r
+  dram_wrapper/i_fifo/U19/O (AOI13HS)                     0.31      10.62 f
+  dram_wrapper/i_fifo/U57/O (BUF1CK)                      0.40      11.02 f
+  dram_wrapper/i_fifo/U191/O (OR2B1S)                     0.28      11.30 f
+  dram_wrapper/i_fifo/U45/O (BUF1CK)                      0.21      11.50 f
+  dram_wrapper/i_fifo/U7/O (BUF1CK)                       0.35      11.85 f
+  dram_wrapper/i_fifo/U115/O (MOAI1S)                     0.40      12.25 r
+  dram_wrapper/i_fifo/mem_reg_3__23_/D (QDFFRBN)          0.00      12.25 r
+  data arrival time                                                 12.25
+
+  clock dram_clk (rise edge)                             12.50      12.50
+  clock network delay (ideal)                             1.00      13.50
+  clock uncertainty                                      -0.10      13.40
+  dram_wrapper/i_fifo/mem_reg_3__23_/CK (QDFFRBN)         0.00      13.40 r
+  library setup time                                     -0.20      13.20
+  data required time                                                13.20
+  --------------------------------------------------------------------------
+  data required time                                                13.20
+  data arrival time                                                -12.25
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.95
+
+
+  Startpoint: rom_wrapper/STATE_reg_0_
+              (rising edge-triggered flip-flop clocked by rom_clk)
+  Endpoint: rom_wrapper/arids_reg_4_
+            (rising edge-triggered flip-flop clocked by rom_clk)
+  Path Group: rom_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                enG2000K              fsa0m_a_generic_core_ss1p62v125c
+  AXI_I_axi2m0_i_inf_Master_AXI2Min_I_axi2m0_o_inf_Master_AXI2Mout_I_axi2m1_i_inf_Master_AXI2Min_I_axi2m1_o_inf_Master_AXI2Mout_I_axi2m2_i_inf_Master_AXI2Min_I_axi2m2_o_inf_Master_AXI2Mout_I_axi2s0_i_inf_Slave_AXI2Sin_I_axi2s0_o_inf_Slave_AXI2Sout_I_axi2s1_i_inf_Slave_AXI2Sin_I_axi2s1_o_inf_Slave_AXI2Sout_I_axi2s2_i_inf_Slave_AXI2Sin_I_axi2s2_o_inf_Slave_AXI2Sout_I_axi2s3_i_inf_Slave_AXI2Sin_I_axi2s3_o_inf_Slave_AXI2Sout_I_axi2s4_i_inf_Slave_AXI2Sin_I_axi2s4_o_inf_Slave_AXI2Sout_I_axi2s5_i_inf_Slave_AXI2Sin_I_axi2s5_o_inf_Slave_AXI2Sout_I_axi2s6_i_inf_Slave_AXI2Sin_I_axi2s6_o_inf_Slave_AXI2Sout_
+                     enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  AR_ch              enG5K                 fsa0m_a_generic_core_ss1p62v125c
+  ROM_wrapper_I_s2axi_i_inf_Slave_S2AXIin_I_s2axi_o_inf_Slave_S2AXIout_
+                     enG5K                 fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock rom_clk (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  rom_wrapper/STATE_reg_0_/CK (QDFFRBN)                   0.00       1.00 r
+  rom_wrapper/STATE_reg_0_/Q (QDFFRBN)                    1.63       2.63 r
+  rom_wrapper/U21/O (INV1CK)                              1.82       4.45 f
+  rom_wrapper/s2axi_o_arready (ROM_wrapper_I_s2axi_i_inf_Slave_S2AXIin_I_s2axi_o_inf_Slave_S2AXIout_)
+                                                          0.00       4.45 f
+  U13/O (BUF1CK)                                          0.67       5.12 f
+  AXI/axi2s0_i_arready (AXI_I_axi2m0_i_inf_Master_AXI2Min_I_axi2m0_o_inf_Master_AXI2Mout_I_axi2m1_i_inf_Master_AXI2Min_I_axi2m1_o_inf_Master_AXI2Mout_I_axi2m2_i_inf_Master_AXI2Min_I_axi2m2_o_inf_Master_AXI2Mout_I_axi2s0_i_inf_Slave_AXI2Sin_I_axi2s0_o_inf_Slave_AXI2Sout_I_axi2s1_i_inf_Slave_AXI2Sin_I_axi2s1_o_inf_Slave_AXI2Sout_I_axi2s2_i_inf_Slave_AXI2Sin_I_axi2s2_o_inf_Slave_AXI2Sout_I_axi2s3_i_inf_Slave_AXI2Sin_I_axi2s3_o_inf_Slave_AXI2Sout_I_axi2s4_i_inf_Slave_AXI2Sin_I_axi2s4_o_inf_Slave_AXI2Sout_I_axi2s5_i_inf_Slave_AXI2Sin_I_axi2s5_o_inf_Slave_AXI2Sout_I_axi2s6_i_inf_Slave_AXI2Sin_I_axi2s6_o_inf_Slave_AXI2Sout_)
+                                                          0.00       5.12 f
+  AXI/U47/O (BUF1CK)                                      0.21       5.34 f
+  AXI/i_ar/ready_s0_i (AR_ch)                             0.00       5.34 f
+  AXI/i_ar/U128/O (BUF1CK)                                0.16       5.49 f
+  AXI/i_ar/U110/O (AN2)                                   0.50       5.99 f
+  AXI/i_ar/valid_s0_o (AR_ch)                             0.00       5.99 f
+  AXI/axi2s0_o_arvalid (AXI_I_axi2m0_i_inf_Master_AXI2Min_I_axi2m0_o_inf_Master_AXI2Mout_I_axi2m1_i_inf_Master_AXI2Min_I_axi2m1_o_inf_Master_AXI2Mout_I_axi2m2_i_inf_Master_AXI2Min_I_axi2m2_o_inf_Master_AXI2Mout_I_axi2s0_i_inf_Slave_AXI2Sin_I_axi2s0_o_inf_Slave_AXI2Sout_I_axi2s1_i_inf_Slave_AXI2Sin_I_axi2s1_o_inf_Slave_AXI2Sout_I_axi2s2_i_inf_Slave_AXI2Sin_I_axi2s2_o_inf_Slave_AXI2Sout_I_axi2s3_i_inf_Slave_AXI2Sin_I_axi2s3_o_inf_Slave_AXI2Sout_I_axi2s4_i_inf_Slave_AXI2Sin_I_axi2s4_o_inf_Slave_AXI2Sout_I_axi2s5_i_inf_Slave_AXI2Sin_I_axi2s5_o_inf_Slave_AXI2Sout_I_axi2s6_i_inf_Slave_AXI2Sin_I_axi2s6_o_inf_Slave_AXI2Sout_)
+                                                          0.00       5.99 f
+  rom_wrapper/s2axi_i_arvalid (ROM_wrapper_I_s2axi_i_inf_Slave_S2AXIin_I_s2axi_o_inf_Slave_S2AXIout_)
+                                                          0.00       5.99 f
+  rom_wrapper/U33/O (AN2)                                 0.34       6.34 f
+  rom_wrapper/U23/O (INV1S)                               1.19       7.53 r
+  rom_wrapper/U57/O (AO22)                                0.43       7.96 r
+  rom_wrapper/arids_reg_4_/D (QDFFRBN)                    0.00       7.96 r
+  data arrival time                                                  7.96
+
+  clock rom_clk (rise edge)                              12.50      12.50
+  clock network delay (ideal)                             1.00      13.50
+  clock uncertainty                                      -0.10      13.40
+  rom_wrapper/arids_reg_4_/CK (QDFFRBN)                   0.00      13.40 r
+  library setup time                                     -0.17      13.23
+  data required time                                                13.23
+  --------------------------------------------------------------------------
+  data required time                                                13.23
+  data arrival time                                                 -7.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        5.27
+
+
+  Startpoint: DM1/STATE_reg_1_
+              (rising edge-triggered flip-flop clocked by sram_clk)
+  Endpoint: DM1/sram_a_r_reg_0_
+            (rising edge-triggered flip-flop clocked by sram_clk)
+  Path Group: sram_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  top                enG2000K              fsa0m_a_generic_core_ss1p62v125c
+  SRAM_wrapper_I_s2axi_i_inf_Slave_S2AXIin_I_s2axi_o_inf_Slave_S2AXIout__0
+                     enG500K               fsa0m_a_generic_core_ss1p62v125c
+  B_ch               enG5K                 fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock sram_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             1.00       1.00
+  DM1/STATE_reg_1_/CK (QDFFRBP)                           0.00       1.00 r
+  DM1/STATE_reg_1_/Q (QDFFRBP)                            0.61       1.61 r
+  DM1/U32/O (INV1S)                                       0.56       2.17 f
+  DM1/U73/O (NR2F)                                        0.56       2.72 r
+  DM1/s2axi_o_bvalid (SRAM_wrapper_I_s2axi_i_inf_Slave_S2AXIin_I_s2axi_o_inf_Slave_S2AXIout__0)
+                                                          0.00       2.72 r
+  AXI/axi2s2_i_bvalid (AXI_I_axi2m0_i_inf_Master_AXI2Min_I_axi2m0_o_inf_Master_AXI2Mout_I_axi2m1_i_inf_Master_AXI2Min_I_axi2m1_o_inf_Master_AXI2Mout_I_axi2m2_i_inf_Master_AXI2Min_I_axi2m2_o_inf_Master_AXI2Mout_I_axi2s0_i_inf_Slave_AXI2Sin_I_axi2s0_o_inf_Slave_AXI2Sout_I_axi2s1_i_inf_Slave_AXI2Sin_I_axi2s1_o_inf_Slave_AXI2Sout_I_axi2s2_i_inf_Slave_AXI2Sin_I_axi2s2_o_inf_Slave_AXI2Sout_I_axi2s3_i_inf_Slave_AXI2Sin_I_axi2s3_o_inf_Slave_AXI2Sout_I_axi2s4_i_inf_Slave_AXI2Sin_I_axi2s4_o_inf_Slave_AXI2Sout_I_axi2s5_i_inf_Slave_AXI2Sin_I_axi2s5_o_inf_Slave_AXI2Sout_I_axi2s6_i_inf_Slave_AXI2Sin_I_axi2s6_o_inf_Slave_AXI2Sout_)
+                                                          0.00       2.72 r
+  AXI/i_b/valid_s2_i (B_ch)                               0.00       2.72 r
+  AXI/i_b/U35/O (NR2)                                     0.25       2.98 f
+  AXI/i_b/U20/O (ND3HT)                                   0.25       3.23 r
+  AXI/i_b/U51/O (NR2)                                     0.08       3.31 f
+  AXI/i_b/U97/O (AN3)                                     0.31       3.62 f
+  AXI/i_b/U12/O (BUF1)                                    0.37       3.99 f
+  AXI/i_b/U52/O (AOI22S)                                  0.29       4.27 r
+  AXI/i_b/U23/O (ND2S)                                    0.11       4.38 f
+  AXI/i_b/U21/O (OR3)                                     0.28       4.66 f
+  AXI/i_b/U92/O (ND2)                                     0.13       4.79 r
+  AXI/i_b/U17/O (ND3)                                     0.15       4.94 f
+  AXI/i_b/U16/O (NR3H)                                    0.48       5.42 r
+  AXI/i_b/U31/O (AN2B1S)                                  0.71       6.13 f
+  AXI/i_b/ready_s2_o (B_ch)                               0.00       6.13 f
+  AXI/axi2s2_o_bready (AXI_I_axi2m0_i_inf_Master_AXI2Min_I_axi2m0_o_inf_Master_AXI2Mout_I_axi2m1_i_inf_Master_AXI2Min_I_axi2m1_o_inf_Master_AXI2Mout_I_axi2m2_i_inf_Master_AXI2Min_I_axi2m2_o_inf_Master_AXI2Mout_I_axi2s0_i_inf_Slave_AXI2Sin_I_axi2s0_o_inf_Slave_AXI2Sout_I_axi2s1_i_inf_Slave_AXI2Sin_I_axi2s1_o_inf_Slave_AXI2Sout_I_axi2s2_i_inf_Slave_AXI2Sin_I_axi2s2_o_inf_Slave_AXI2Sout_I_axi2s3_i_inf_Slave_AXI2Sin_I_axi2s3_o_inf_Slave_AXI2Sout_I_axi2s4_i_inf_Slave_AXI2Sin_I_axi2s4_o_inf_Slave_AXI2Sout_I_axi2s5_i_inf_Slave_AXI2Sin_I_axi2s5_o_inf_Slave_AXI2Sout_I_axi2s6_i_inf_Slave_AXI2Sin_I_axi2s6_o_inf_Slave_AXI2Sout_)
+                                                          0.00       6.13 f
+  DM1/s2axi_i_bready (SRAM_wrapper_I_s2axi_i_inf_Slave_S2AXIin_I_s2axi_o_inf_Slave_S2AXIout__0)
+                                                          0.00       6.13 f
+  DM1/U10/O (ND2S)                                        1.27       7.40 r
+  DM1/U9/O (ND3HT)                                        0.51       7.91 f
+  DM1/U24/O (AN2S)                                        0.70       8.61 f
+  DM1/U25/O (BUF2)                                        0.71       9.32 f
+  DM1/U16/O (AN2B1)                                       0.95      10.27 r
+  DM1/U26/O (INV1S)                                       0.58      10.86 f
+  DM1/U42/O (AO12T)                                       0.51      11.36 f
+  DM1/U77/O (INV2)                                        0.74      12.11 r
+  DM1/U104/O (AOI22S)                                     0.44      12.55 f
+  DM1/U153/O (ND2)                                        0.49      13.04 r
+  DM1/sram_a_r_reg_0_/D (QDFFRBS)                         0.00      13.04 r
+  data arrival time                                                 13.04
+
+  clock sram_clk (rise edge)                             12.50      12.50
+  clock network delay (ideal)                             1.00      13.50
+  clock uncertainty                                      -0.10      13.40
+  DM1/sram_a_r_reg_0_/CK (QDFFRBS)                        0.00      13.40 r
+  library setup time                                     -0.21      13.19
+  data required time                                                13.19
+  --------------------------------------------------------------------------
+  data required time                                                13.19
+  data arrival time                                                -13.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.16
+
+
+1
