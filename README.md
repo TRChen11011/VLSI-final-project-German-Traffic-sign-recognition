@@ -4,7 +4,7 @@
 * NIN model structure
   * We use NIN to improve the accurancy of detection with less parameter needed,
   * model structure :
-    ![image](https://user-images.githubusercontent.com/73687292/215978510-056a30d3-442a-4f86-b6e2-85c2a4a12e19.png)
+    ![圖片1](https://github.com/user-attachments/assets/169c07c8-17a4-485d-a641-b687fc7d5162)
 * Dataset
   * Source : Fruit Classification (kaggle)
   * Number of classes: 20 (fruits and vegetables)
